@@ -1,0 +1,7 @@
+.myDropdown {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the dropdown */
+    margin: 10px 0; /* Margin around the dropdown */
+    border: 2px solid #ccc; /* Grey border */
+    border-radius: 4px; /* Rounded corners */
+}

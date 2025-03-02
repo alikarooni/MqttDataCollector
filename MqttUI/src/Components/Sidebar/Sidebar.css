@@ -1,0 +1,29 @@
+.sidebar {
+    background-color: #ffffff;
+    padding: 15px;
+    width: 200px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: calc(100vh - 60px); 
+    border: 1px solid #e9e9e9
+}
+
+.sidebar ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+    padding: 10px; /* Padding for list items */
+    font-size: 18px; /* Font size */
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Link color */
+}
+
+.sidebar ul li a:hover {
+    color: #4CAF50; /* Hover color */
+}

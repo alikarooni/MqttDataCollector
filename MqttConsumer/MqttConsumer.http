@@ -1,0 +1,6 @@
+@EventGridReceiver_HostAddress = http://localhost:5252
+
+GET {{EventGridReceiver_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

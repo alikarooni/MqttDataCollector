@@ -1,0 +1,20 @@
+.form-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    margin-top: 60px; /* Margin to make space for the header */
+    margin-left: 220px; /* Margin to make space for the sidebar */
+    padding: 20px; /* Padding */
+    background-color: #ffffff; /* White background */
+    min-height: calc(100vh - 60px); /* Full height minus header height */
+    flex: 1;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}

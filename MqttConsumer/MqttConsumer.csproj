@@ -1,0 +1,82 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<Content Update="appsettings.json">
+		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</Content>
+	<Content Update="appsettings.*.json">
+		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		<DependentUpon>appsettings.json</DependentUpon>
+	</Content>
+		
+    <Content Include="bin\Debug\net8.0\MqttConsumer.deps.json" />
+    <Content Include="bin\Debug\net8.0\MqttConsumer.runtimeconfig.json" />
+    <Content Include="bin\Release\net8.0\MqttConsumer.deps.json" />
+    <Content Include="bin\Release\net8.0\MqttConsumer.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Messaging.EventGrid" Version="4.24.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.39.1" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" Version="3.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.ApplicationInsights" Version="2.22.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.25.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".github\workflows\Pipeline.yaml" />
+    <None Include="bin\Debug\net8.0\Azure.Core.dll" />
+    <None Include="bin\Debug\net8.0\Azure.Messaging.EventGrid.dll" />
+    <None Include="bin\Debug\net8.0\MqttConsumer.dll" />
+    <None Include="bin\Debug\net8.0\MqttConsumer.exe" />
+    <None Include="bin\Debug\net8.0\MqttConsumer.pdb" />
+    <None Include="bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll" />
+    <None Include="bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll" />
+    <None Include="bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.WebApiCompatShim.dll" />
+    <None Include="bin\Debug\net8.0\Microsoft.Azure.WebJobs.dll" />
+    <None Include="bin\Debug\net8.0\Microsoft.Azure.WebJobs.Extensions.Http.dll" />
+    <None Include="bin\Debug\net8.0\Microsoft.Azure.WebJobs.Host.dll" />
+    <None Include="bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <None Include="bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll" />
+    <None Include="bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll" />
+    <None Include="bin\Debug\net8.0\Newtonsoft.Json.Bson.dll" />
+    <None Include="bin\Debug\net8.0\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\net8.0\System.ClientModel.dll" />
+    <None Include="bin\Debug\net8.0\System.Memory.Data.dll" />
+    <None Include="bin\Debug\net8.0\System.Net.Http.Formatting.dll" />
+    <None Include="bin\Release\net8.0\Azure.Core.dll" />
+    <None Include="bin\Release\net8.0\Azure.Messaging.EventGrid.dll" />
+    <None Include="bin\Release\net8.0\EventGridReceiver.dll" />
+    <None Include="bin\Release\net8.0\EventGridReceiver.exe" />
+    <None Include="bin\Release\net8.0\EventGridReceiver.pdb" />
+    <None Include="bin\Release\net8.0\Microsoft.AspNetCore.JsonPatch.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.AspNetCore.Mvc.WebApiCompatShim.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.Azure.WebJobs.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.Azure.WebJobs.Extensions.Http.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.Azure.WebJobs.Host.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.DotNet.PlatformAbstractions.dll" />
+    <None Include="bin\Release\net8.0\Microsoft.Extensions.DependencyModel.dll" />
+    <None Include="bin\Release\net8.0\Newtonsoft.Json.Bson.dll" />
+    <None Include="bin\Release\net8.0\Newtonsoft.Json.dll" />
+    <None Include="bin\Release\net8.0\System.ClientModel.dll" />
+    <None Include="bin\Release\net8.0\System.Memory.Data.dll" />
+    <None Include="bin\Release\net8.0\System.Net.Http.Formatting.dll" />
+  </ItemGroup>
+
+</Project>

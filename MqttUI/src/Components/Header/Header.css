@@ -1,0 +1,14 @@
+.header {
+    background-color: #ffffff; /* Green background */
+    color: Black; /* White text */
+    padding: 10px; /* Padding */
+    text-align: center; /* Centered text */
+    font-size: 24px; /* Font size */
+    width: 100%; /* Full width */
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    z-index: 1000; /* Ensure it stays on top */
+    height: 60px; /* Fixed height */
+    line-height: 40px; /* Center text vertically */
+}

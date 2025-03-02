@@ -1,0 +1,8 @@
+.myTextBox {
+    padding: 10px; /* Padding inside the text box */
+    margin: 10px 0; /* Margin around the text box */
+    box-sizing: border-box; /* Includes padding and border in the width */
+    width: 95%; /* Nearly full-width but leaves room for margins */
+    border: 2px solid #ccc; /* Grey border */
+    border-radius: 4px; /* Rounded corners */
+}
